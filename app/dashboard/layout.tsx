@@ -5,7 +5,7 @@ async function Layout({ children }: { children: React.ReactNode }) {
   const { has } = await auth();
 
   const hasStarterPlan = has({ plan: "starter" });
-  const hasProPlan = has({ plan: "Pro" });
+  const hasProPlan = has({ plan: "pro" });
 
   const isPaidMember = hasStarterPlan || hasProPlan;
 

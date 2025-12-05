@@ -12,11 +12,11 @@ interface SummaryHeaderProps {
 
 export function SummaryHeader({ seoReport }: SummaryHeaderProps) {
   return (
-    <div className="border-b bg-gradient-to-r from-card via-card/95 to-card backdrop-blur-sm">
+    <div className="border-b bg-linear-to-r from-card via-card/95 to-card backdrop-blur-sm">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-6">
           <div className="space-y-2">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight bg-linear-to-r from-foreground to-foreground/80 bg-clip-text">
               {seoReport?.meta.entity_name || "SEO Report"}
             </h1>
             <div className="text-sm sm:text-base lg:text-lg text-muted-foreground flex flex-wrap items-center gap-2 sm:gap-4">

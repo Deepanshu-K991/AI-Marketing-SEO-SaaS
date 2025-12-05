@@ -17,7 +17,7 @@ import ReportsTable from "@/components/ReportsTable";
 import { CountrySelector } from "@/components/CountrySelector";
 import { Authenticated, AuthLoading } from "convex/react";
 
-function Dashboard() {
+function dashboard() {
   const [prompt, setPrompt] = useState("");
   const [country, setCountry] = useState("US");
   const [isLoading, setIsLoading] = useState(false);
@@ -43,21 +43,21 @@ function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
+    <div className="min-h-screen bg-linear-to-brrom-background via-background to-muted/20">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="space-y-8">
           {/* Create Report Section */}
-          <Card className="relative overflow-hidden border-0 shadow-2xl bg-gradient-to-br from-blue-50/80 via-purple-50/80 to-pink-50/80 dark:from-blue-950/50 dark:via-purple-950/50 dark:to-pink-950/50 backdrop-blur-sm">
+          <Card className="relative overflow-hidden border-0 shadow-2xl bg-linear-to-br from-blue-50/80 via-purple-50/80 to-pink-50/80 dark:from-blue-950/50 dark:via-purple-950/50 dark:to-pink-950/50 backdrop-blur-sm">
             {/* Background decorations */}
-            <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-400/20 via-purple-400/20 to-pink-400/20 rounded-full -translate-y-20 translate-x-20" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-purple-400/15 to-blue-400/15 rounded-full translate-y-16 -translate-x-16" />
+            <div className="absolute top-0 right-0 w-40 h-40 bg-linear-to-br from-blue-400/20 via-purple-400/20 to-pink-400/20 rounded-full -translate-y-20 translate-x-20" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-linear-to-trrom-purple-400/15 to-blue-400/15 rounded-full translate-y-16 -translate-x-16" />
 
             <CardHeader className="text-center pb-6 relative">
               <div className="flex items-center justify-center gap-3 mb-3">
-                <div className="p-2 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg">
+                <div className="p-2 rounded-xl bg-linear-to-br from-blue-500 to-purple-600 text-white shadow-lg">
                   <Sparkles className="w-6 h-6" />
                 </div>
-                <CardTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <CardTitle className="text-3xl font-bold bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Create New Report
                 </CardTitle>
               </div>
@@ -96,7 +96,7 @@ function Dashboard() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="h-14 px-6 md:px-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 border-0 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 group font-semibold w-full md:w-auto"
+                      className="h-14 px-6 md:px-8 bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 border-0 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 group font-semibold w-full md:w-auto"
                       disabled={isLoading || !prompt.trim()}
                     >
                       {isLoading ? (
@@ -167,4 +167,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default dashboard;

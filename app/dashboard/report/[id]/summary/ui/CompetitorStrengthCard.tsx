@@ -27,7 +27,7 @@ export function CompetitorStrengthCard({
     }));
 
   return (
-    <Card className="border bg-gradient-to-br from-card to-card/95">
+    <Card className="border bg-linear-to-br from-card to-card/95">
       <CardHeader className="pb-6">
         <div className="flex items-center gap-3">
           <div className="p-2 rounded-full bg-orange-100 dark:bg-orange-900/50">
@@ -56,7 +56,7 @@ export function CompetitorStrengthCard({
               return (
                 <div
                   key={c.name}
-                  className={`p-4 rounded-lg ${isTop ? "bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 border border-orange-200 dark:border-orange-800" : "bg-muted/30"}`}
+                  className={`p-4 rounded-lg ${isTop ? "bg-linear-to-r from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 border border-orange-200 dark:border-orange-800" : "bg-muted/30"}`}
                 >
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-2">
@@ -81,8 +81,8 @@ export function CompetitorStrengthCard({
                       <div
                         className={`h-2 rounded-full transition-all duration-1000 ${
                           isTop
-                            ? "bg-gradient-to-r from-orange-500 to-red-500"
-                            : "bg-gradient-to-r from-primary/70 to-primary"
+                            ? "bg-linear-to-r from-orange-500 to-red-500"
+                            : "bg-linear-to-r from-primary/70 to-primary"
                         }`}
                         style={{
                           width: `${Math.min(percentage, 100)}%`,

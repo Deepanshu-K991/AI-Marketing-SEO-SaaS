@@ -111,7 +111,7 @@ export default function ReportPage({
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
+    <div className="min-h-screen bg-linear-to-br from-background via-background to-muted/20">
       <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="space-y-6">
           {/* Header */}
@@ -211,7 +211,7 @@ export default function ReportPage({
                 {job.error && (
                   <div className="p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
                     <div className="flex items-start gap-2">
-                      <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
+                      <XCircle className="w-4 h-4 text-red-600 mt-0.5 shrink-0" />
                       <div>
                         <p className="text-sm font-medium text-red-800 dark:text-red-200">
                           Error Details
