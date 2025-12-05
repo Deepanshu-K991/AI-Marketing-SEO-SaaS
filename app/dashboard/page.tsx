@@ -17,7 +17,7 @@ import ReportsTable from "@/components/ReportsTable";
 import { CountrySelector } from "@/components/CountrySelector";
 import { Authenticated, AuthLoading } from "convex/react";
 
-function dashboard() {
+function Dashboard() {
   const [prompt, setPrompt] = useState("");
   const [country, setCountry] = useState("US");
   const [isLoading, setIsLoading] = useState(false);
@@ -167,4 +167,4 @@ function dashboard() {
   );
 }
 
-export default dashboard;
+export default Dashboard;
