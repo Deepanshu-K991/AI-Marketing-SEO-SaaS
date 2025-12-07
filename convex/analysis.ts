@@ -7,6 +7,7 @@ import { generateObject } from "ai";
 import { buildAnalysisPrompt, systemPrompt } from "@/prompts/gpt";
 import { seoReportSchema } from "@/lib/seo-schema";
 import { internal, api } from "./_generated/api";
+import { google } from '@ai-sdk/google';
 
 /**
  * Run AI analysis on existing scraping data for a job.
@@ -62,7 +63,7 @@ export const runAnalysis = internalAction({
       console.log("Prompt saved for job:", args.jobId);
 
       const { object: seoReport } = await generateObject({
-        model: openai("gpt-4o"),
+        model: google("gemini-2.5-flash"),
         system: systemPrompt(),
         prompt: analysisPrompt,
         schema: seoReportSchema,

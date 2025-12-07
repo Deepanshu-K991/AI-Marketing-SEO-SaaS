@@ -3,6 +3,7 @@ import { streamText, UIMessage, convertToModelMessages } from "ai";
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "@/convex/_generated/api";
 import { auth } from "@clerk/nextjs/server";
+import { google } from '@ai-sdk/google';
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
@@ -72,7 +73,7 @@ Provide specific, data-driven insights based on the actual report data. When ref
   }
 
   const result = streamText({
-    model: openai("gpt-4o"),
+    model: google("gemini-2.5-flash"),
     messages: convertToModelMessages(messages),
     system: systemPrompt,
     tools: {
