@@ -388,11 +388,16 @@ Webhook endpoint for receiving Bright Data scraping results.
 
 ### Planned Screenshots
 
-- [ ] Landing page with hero section
-- [ ] Dashboard with reports table
-- [ ] SEO report detail view
-- [ ] AI chat interface
-- [ ] Pricing page
+- [ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36dd3557-6592-4f91-bfaa-9645094c502b" />
+] Landing page with hero section
+- [<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9b703a61-a5a5-40b0-b2c7-b58562645bb6" />
+ ] Dashboard with reports table
+- [<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cd3678fc-e529-427d-8de7-b4bf992b2c75" />
+ ] SEO report detail view
+- [<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/50aebf21-5118-4a6e-be2e-f893e7aa498a" />
+ ] AI chat interface
+- [<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ca73f7b-9f65-4fde-9880-846ad570e206" />
+ ] Pricing page
 
 ### Live Demo
 
